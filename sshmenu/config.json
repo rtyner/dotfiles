@@ -1,0 +1,9 @@
+{
+    "targets": [
+        {
+            "host": "admin@router.rtynerlabs.xyz",
+            "friendly": "Home router",
+            "options": []
+        }
+    ]
+}
