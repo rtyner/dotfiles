@@ -1,7 +1,7 @@
 # set definitions
 set $mod Mod4
 set $term --no-startup-id urxvt
-font pango:hack 10
+font pango:System San Francisco Display 13
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod 
@@ -17,9 +17,9 @@ gaps outer 8
 exec_always --no-startup-id /home/rusty/.config/polybar/launch.sh
 exec_always --no-startup-id xrdb .Xresources
 exec --no-startup-id compton -f
-exec --no-startup-id insync start
+# exec --no-startup-id insync start
 exec_always --no-startup-id feh --bg-scale /home/rusty/wallpapers/wall.png
-
+# exec --no-startup-id urxvt -name dropdown -e python
 # i3 specific binds
 
 # reload i3 config (hard reload)
@@ -28,6 +28,23 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart 
 # logs out of xsession
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"  
+
+# scratchpad
+# for_window [instance="dropdown"] floating enable for_window [instance="dropdown"] resize set 625 400 
+# for_window [instance="dropdown"] move scratchpad for_window [instance="dropdown"] border pixel 2
+
+## dropdown
+# settings for dropdown
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 2
+
+# start scratchpad
+exec_always --no-startup-id urxvt -name dropdown -e python
+
+# keybinding for sracthpad
+bindsym $mod+u [instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 
 # application binds
 
@@ -47,8 +64,6 @@ bindsym $mod+Shift+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+q kill 
 # start bitwarden
 bindsym $mod+b exec bitwarden
-# wowlololol
-bindsym $mod+Shift+w exec $term -e wine /home/rusty/.wine/drive_c/Program\ Files\ \(x86\)/World\ of\ Warcraft/WoW.exe
 
 # change focus
 bindsym $mod+h focus left
@@ -64,6 +79,7 @@ bindsym $mod+Shift+l move right
 
 # split line hotzontal
 bindsym $mod+g split h 
+
 # split line verticle
 bindsym $mod+v split v 
 
