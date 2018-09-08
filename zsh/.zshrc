@@ -50,13 +50,10 @@ alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 alias zrl='source ~/.zshrc && echo zsh config reloaded'
 
-# python
-alias py='python3.7'
-alias pip='pip3'
-
 # fix typos
 alias ;s='ls -lah'
 alias ks='ls -lah'
+alias sl='ls -lah'
 
 # git
 alias ga='git add'
@@ -94,7 +91,7 @@ alias v='vim'
 alias cls='clear;ls'
 alias myip='curl icanhazip.com'
 alias ll='ls -lah --color=auto'
-alias ls='ls -lah --color=auto'
+alias ls='ls -lh --color=auto'
 alias sudo='nocorrect sudo'
 alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dus='du -sckxh * | sort -nr'
