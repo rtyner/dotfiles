@@ -15,7 +15,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
 # User configuration
 
 # default permissions on newly created files
@@ -39,7 +38,6 @@ HISTSIZE=5000
 SAVEHIST=5000
 HISTFILE=~/.zsh_history
 
-
 # Aliasing
 
 # i3
@@ -47,9 +45,6 @@ alias i3c='vim ~/.config/i3/config'
 
 # vimrc
 alias vrc='vim ~/.vimrc'
-
-# Set vi mode
-set -o vi
 
 # .zshrc
 alias zrc='vim ~/.zshrc'
@@ -82,10 +77,11 @@ alias gf='git reflog'
 
 # dirs
 alias dirs='dirs -v'
-alias pj='cd ~/projects'
+alias pj='cd /home/rt/projects'
 alias h='cd ~'
 alias drive='cd /home/rt/rt@rtyner.com'
-alias pcc='cd home/rt/Projects/Python_Crash_Course'
+alias pcc='cd /home/rt/projects/python-crash-course'
+alias dot='cd /home/rt/projects/dotfiles'
 
 # misc
 alias update='sudo pacman -Syu'
@@ -98,7 +94,7 @@ alias v='vim'
 alias cls='clear;ls'
 alias myip='curl icanhazip.com'
 alias ll='ls -lah --color=auto'
-alias ls='ls -lh --color=auto'
+alias ls='ls -lah --color=auto'
 alias sudo='nocorrect sudo'
 alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dus='du -sckxh * | sort -nr'
@@ -106,8 +102,6 @@ alias savecmd='vim ~/projects/linux-command-ref/useful-commands.md'
 
 # colorize grep output
 alias grep='grep --color=auto -n'
-
-
 
 #powerline-daemon -q
 # . /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
