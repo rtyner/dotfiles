@@ -20,8 +20,9 @@ let g:lightline = {
       \ },
       \ }
 
-" powerline font config
-let g:powerline_pycmd = 'py3'
+let g:powerline_pycmd = 'py3'	" powerline font config
+
+autocmd vimenter * NERDTree     " start NERDTree with vim
 
 set noshowmode		" remove mode display since lightline handles this
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
