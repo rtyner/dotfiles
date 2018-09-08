@@ -1,5 +1,13 @@
 set modelines=0		" CVE-2007-2438
 set encoding=utf-8	" set UTF-8
+set nocompatible	" use vim defaults
+set backspace=2		" more powerful backspacing
+set showmatch		" show matching pair of ()[]{}
+set number			" set line numbers
+set relativenumber	" relative line numbers
+set cursorline		" highlight entire line cursor is on
+set hlsearch		" highlight searches
+set ignorecase		" ignore case when searching
 
 " enable pathogen plugin manager
 execute pathogen#infect('~/.vim/bundle/{}')
@@ -23,24 +31,12 @@ let g:lightline = {
 let g:powerline_pycmd = 'py3'	" powerline font config
 
 autocmd vimenter * NERDTree     " start NERDTree with vim
-
-set noshowmode		" remove mode display since lightline handles this
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=2		" more powerful backspacing
-set showmatch 		" show mathing pair for []{}()
-
-" line numbers
-set number
-set relativenumber
-set cursorline
+let NERDTreeMinimalUI = 1		" removes Press ? for help
 
 " enable mouse
 if has('mouse')
   set mouse=a
 endif
-
-set hlsearch		" highlight searches
-set ignorecase		" ignore case when searching
 
 " enable syntax
 syntax enable
@@ -59,9 +55,8 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
 
-"""""""""""""""""""""""""""""""""
-" Python Specific Configuration "
-"""""""""""""""""""""""""""""""""
+" Python Specific Configuration 
+
 set ts=4		" tabs = 4 spaces
 let python_highlight_all = 1 " python highlighting
 set autoindent		" indent when moving to the next line
@@ -85,3 +80,6 @@ highlight ColorColumn ctermbg=9
 " flag unnecessary whitespace
 " highlight BadWhitespace ctermfg=16 guibg=#F8F8F0
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h, *.md match BadWhitespace /\s\+$/
+
+set noshowmode		" hide mode display
+
