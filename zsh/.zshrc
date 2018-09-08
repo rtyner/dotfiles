@@ -1,7 +1,9 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/rusty/.oh-my-zsh
+  export ZSH="/home/rt/.oh-my-zsh"
 
-ZSH_THEME="dracula"
+ZSH_THEME="robbyrussell"
+
+. /usr/share/zsh/site-contrib/powerline.zsh
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -82,8 +84,8 @@ alias gf='git reflog'
 alias dirs='dirs -v'
 alias pj='cd ~/projects'
 alias h='cd ~'
-alias drive='cd /home/rusty/rusty@rtyner.com'
-alias pcc='cd home/rusty/Projects/Python_Crash_Course'
+alias drive='cd /home/rt/rt@rtyner.com'
+alias pcc='cd home/rt/Projects/Python_Crash_Course'
 
 # misc
 alias update='sudo pacman -Syu'
@@ -110,4 +112,4 @@ alias grep='grep --color=auto -n'
 #powerline-daemon -q
 # . /usr/lib/python3.6/site-packages/powerline/bindings/zsh/powerline.zsh
 
-source /home/rusty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/rt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
