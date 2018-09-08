@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/rt/projects/2018-09-07-225144_939x59_scrot.png" added="2018-09-08T02:51:58Z" modified="2018-09-08T02:51:58Z" visited="2018-09-08T02:51:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T02:51:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/projects/2018-09-07-225522_1894x50_scrot.png" added="2018-09-08T02:55:31Z" modified="2018-09-08T02:55:31Z" visited="2018-09-08T02:55:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T02:55:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/projects" added="2018-09-08T03:56:53Z" modified="2018-09-08T03:56:53Z" visited="2018-09-08T03:56:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2018-09-08T03:56:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/2018-09-08-102550_2559x1436_scrot.png" added="2018-09-08T14:26:00Z" modified="2018-09-08T14:26:00Z" visited="2018-09-08T14:26:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T14:26:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/Downloads/TempleOS.ISO" added="2018-09-08T15:33:37Z" modified="2018-09-08T15:33:37Z" visited="2018-09-08T15:33:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-cd-image"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T15:33:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/2018-09-08-135743_950x276_scrot.png" added="2018-09-08T17:57:52Z" modified="2018-09-08T17:57:52Z" visited="2018-09-08T17:57:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T17:57:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/vimrc.png" added="2018-09-08T18:25:35Z" modified="2018-09-08T18:25:35Z" visited="2018-09-08T18:25:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T18:25:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/2018-09-08-142753_1898x1057_scrot.png" added="2018-09-08T18:28:04Z" modified="2018-09-08T18:28:04Z" visited="2018-09-08T18:28:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T18:28:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/rt/local" added="2018-09-08T21:35:24Z" modified="2018-09-08T21:35:24Z" visited="2018-09-08T21:35:25.087825Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2018-09-08T21:35:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
