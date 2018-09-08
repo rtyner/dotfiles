@@ -1,15 +1,30 @@
-" Configuration file for vim
 set modelines=0		" CVE-2007-2438
 
-" set UTF-8
-set encoding=utf-8
+set encoding=utf-8	" set UTF-8
 
 " enable pathogen plugin manager
-execute pathogen#infect()
+execute pathogen#infect('~/.vim/bundle/{}')
 
-" nerdtree plugin
-autocmd vimenter * NERDTree
+filetype plugin indent on
 
+" lightline config
+set laststatus=2
+
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ }
+
+" powerline font config
+let g:powerline_pycmd = 'py3'
+
+set noshowmode		" remove mode display since lightline handles this
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
 set backspace=2		" more powerful backspacing
 set showmatch 		" show mathing pair for []{}()
@@ -17,27 +32,26 @@ set showmatch 		" show mathing pair for []{}()
 " line numbers
 set number
 set relativenumber
-
-" set number of lines for cursor to move
-set so=7
+set cursorline
 
 " enable mouse
 if has('mouse')
   set mouse=a
 endif
 
-" highlight searches
-set hlsearch
+set hlsearch		" highlight searches
 
-" ignore case when searching
-set ignorecase
+set ignorecase		" ignore case when searching
 
 " enable syntax
 syntax enable
 syntax on
 
-" set colorscheme
-colorscheme nord 
+" nord colorscheme config
+colorscheme nord
+let g:nord_italic_comments = 1
+let g:nord_comment_brightness = 15
+let g:nord_cursor_line_number_background = 1
 
 " Don't write backup file if vim is being called by "crontab -e"
 au BufWrite /private/tmp/crontab.* set nowritebackup nobackup
@@ -63,7 +77,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix
 
 set colorcolumn=80              " Show the 80th char column.
-highlight ColorColumn ctermbg=5
+highlight ColorColumn ctermbg=9
 
 " flag unnecessary whitespace
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
