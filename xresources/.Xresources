@@ -1,9 +1,8 @@
-! URxvt .scrollBar: false
+URxvt.scrollBar: false
 
 ! Fonts
 !URxvt.font: 9x15
-URxvt.font: xft:hack:size=12
-
+URxvt.font: xft:hack:size=12,xft:Inconsolata\ for\ Powerline,xft:PowerlineSymbols,xft:DejaVu\ Sans\ Mono\ for\ Powerline
 URxvt.background: [65]#282A36
 
 ! special
@@ -41,4 +40,4 @@ URxvt.background: [65]#282A36
 
 ! white
 *.color7:       #8c98a7
-*.color15: #c1c9d4
+*.color15:      #c1c9d4
