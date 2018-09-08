@@ -1,5 +1,4 @@
 set modelines=0		" CVE-2007-2438
-
 set encoding=utf-8	" set UTF-8
 
 " enable pathogen plugin manager
@@ -40,7 +39,6 @@ if has('mouse')
 endif
 
 set hlsearch		" highlight searches
-
 set ignorecase		" ignore case when searching
 
 " enable syntax
@@ -60,8 +58,12 @@ au BufWrite /private/etc/pw.* set nowritebackup nobackup
 
 let skip_defaults_vim=1
 
-" Python Specific Configuration
+"""""""""""""""""""""""""""""""""
+" Python Specific Configuration "
+"""""""""""""""""""""""""""""""""
+set ts=4		" tabs = 4 spaces
 let python_highlight_all = 1 " python highlighting
+set autoindent		" indent when moving to the next line
 
 " run python in buffer
 nnoremap <buffer> <F2> :exec '!python' shellescape(@%, 1)<cr>
