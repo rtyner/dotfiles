@@ -71,16 +71,17 @@ nnoremap <buffer> <F2> :exec '!python' shellescape(@%, 1)<cr>
 
 " set proper PEP8 indentation
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
 
 set colorcolumn=80              " Show the 80th char column.
 highlight ColorColumn ctermbg=9
 
 " flag unnecessary whitespace
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+" highlight BadWhitespace ctermfg=16 guibg=#F8F8F0
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h, *.md match BadWhitespace /\s\+$/
