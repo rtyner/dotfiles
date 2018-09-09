@@ -1,13 +1,22 @@
-set modelines=0		" CVE-2007-2438
-set encoding=utf-8	" set UTF-8
-set nocompatible	" use vim defaults
-set backspace=2		" more powerful backspacing
-set showmatch		" show matching pair of ()[]{}
-set number			" set line numbers
-set relativenumber	" relative line numbers
-set cursorline		" highlight entire line cursor is on
-set hlsearch		" highlight searches
-set ignorecase		" ignore case when searching
+set modelines=0			" CVE-2007-2438
+set encoding=utf-8		" set UTF-8
+set nocompatible		" use vim defaults
+set backspace=2			" more powerful backspacing
+set showmatch			" show matching pair of ()[]{}
+set number				" set line numbers
+set relativenumber		" relative line numbers
+set cursorline			" highlight entire line cursor is on
+set hlsearch			" highlight searches
+set ignorecase			" ignore case when searching
+set clipboard=unnamed	" let vim and system clipboard work together
+set splitbelow			" bottom split
+set splitright			" right split
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " enable pathogen plugin manager
 execute pathogen#infect('~/.vim/bundle/{}')
@@ -30,15 +39,13 @@ let g:lightline = {
 
 let g:powerline_pycmd = 'py3'	" powerline font config
 
-autocmd vimenter * NERDTree     " start NERDTree with vim
-let NERDTreeMinimalUI = 1		" removes Press ? for help
-
 " enable mouse
 if has('mouse')
   set mouse=a
 endif
 
 " enable syntax
+let python_highlight_all=1
 syntax enable
 syntax on
 
@@ -57,9 +64,9 @@ let skip_defaults_vim=1
 
 " Python Specific Configuration 
 
-set ts=4		" tabs = 4 spaces
+set ts=4					 " tabs = 4 spaces
 let python_highlight_all = 1 " python highlighting
-set autoindent		" indent when moving to the next line
+set autoindent		         " indent when moving to the next line
 
 " run python in buffer
 nnoremap <buffer> <F2> :exec '!python' shellescape(@%, 1)<cr>
@@ -74,12 +81,7 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
-set colorcolumn=80              " Show the 80th char column.
-highlight ColorColumn ctermbg=9
+set colorcolumn=80           " Show the 80th char column.
 
-" flag unnecessary whitespace
-" highlight BadWhitespace ctermfg=16 guibg=#F8F8F0
-" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h, *.md match BadWhitespace /\s\+$/
-
-set noshowmode		" hide mode display
+set noshowmode				 " hide mode display
 
