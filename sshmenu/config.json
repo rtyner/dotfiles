@@ -1,0 +1,79 @@
+{
+    "targets": [
+        {
+            "host": "admin@usg.rtynerlabs.io",
+            "friendly": "Home router",
+            "options": []
+        },
+	{
+            "host": "root@proxmox-1.rtynerlabs.io",
+            "friendly": "Proxmox",
+            "options": []
+        },
+	{
+            "host": "rt@autoctl.rtynerlabs.io",
+            "friendly": "Config Management",
+            "options": []
+        },
+	{
+            "host": "rt@plex.rtynerlabs.io",
+            "friendly": "Plex",
+            "options": []
+        },
+	{
+            "host": "rt@docker.rtynerlabs.io",
+            "friendly": "Docker Host",
+            "options": []
+        },
+	{
+            "host": "rt@unifi-controller.rtynerlabs.io",
+            "friendly": "UniFi Controller",
+            "options": []
+        },
+	{
+            "host": "rt@monitoring.rtynerlabs.io",
+            "friendly": "Monitoring host",
+            "options": []
+        },
+	{
+            "host": "rt@wiki.rtynerlabs.io",
+            "friendly": "Wiki",
+            "options": []
+        },
+	{
+            "host": "rt@ns1.rtynerlabs.io",
+            "friendly": "BIND Primary",
+            "options": []
+        },
+	{
+            "host": "rt@ns2.rtynerlabs.io",
+            "friendly": "BIND Secondary",
+            "options": []
+        },
+	{
+            "host": "rt@syslog.rtynerlabs.io",
+            "friendly": "Syslog server",
+            "options": []
+        },
+	{
+            "host": "rt@ipam.rtynerlabs.io",
+            "friendly": "PHPIPAM",
+            "options": []
+        },
+	{
+            "host": "rt@vpn.rtynerlabs.io",
+            "friendly": "vpn",
+            "options": []
+        },
+	{
+            "host": "rt@snort.rtynerlabs.io",
+            "friendly": "snort IDS",
+            "options": []
+        },
+	{
+            "host": "rt@backup.rtynerlabs.io",
+            "friendly": "backup server",
+            "options": []
+        }
+    ]
+}
