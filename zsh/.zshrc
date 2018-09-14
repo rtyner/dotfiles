@@ -45,6 +45,9 @@ HISTFILE=~/.zsh_history
 # i3
 alias i3c='vim ~/.config/i3/config'
 
+# polybar
+alias pbar='vim ~/.config/polybar/config'
+
 # vimrc
 alias vrc='vim ~/.vimrc'
 
@@ -78,9 +81,11 @@ alias gf='git reflog'
 alias dirs='dirs -v'
 alias pj='cd /home/rt/projects'
 alias h='cd ~'
-alias drive='cd /home/rt/rt@rtyner.com'
+alias drive='cd /home/rt/rusty@rtyner.com'
 alias pcc='cd /home/rt/projects/python-crash-course'
-alias dot='cd /home/rt/projects/dotfiles'
+alias dots='cd /home/rt/projects/dotfiles'
+alias notes='cd /home/rt/projects/notes'
+alias red='cd /mnt/media'
 
 # misc
 alias update='sudo pacman -Syu'
