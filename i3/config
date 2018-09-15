@@ -1,7 +1,9 @@
+## i3 config
+
 # set definitions
 set $mod Mod4
 set $term --no-startup-id urxvt
-font pango:Hack 12
+font pango:Hack 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod 
@@ -14,17 +16,16 @@ gaps inner 10
 gaps outer 8
 
 # startup programs
-#exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
 exec_always --no-startup-id xrandr --output DP-4 --rate 165.00 --mode 2560x1440
 exec_always --no-startup-id /usr/bin/discord
 exec_always --no-startup-id /home/rt/.config/polybar/launch.sh
 exec_always --no-startup-id xrdb .Xresources
-exec --no-startup-id compton -f
-# exec --no-startup-id insync start
+exec --no-startup-id compton -b --config /home/rt/.config/compton.conf
 exec_always --no-startup-id feh --bg-scale /home/rt/wallpapers/wall.png
-# exec --no-startup-id urxvt -name dropdown -e python
+# exec --no-startup-id insync start
+exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
 
-# i3 specific binds
+## i3 specific binds
 
 # reload i3 config (hard reload)
 bindsym $mod+Shift+c reload 
@@ -32,10 +33,6 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart 
 # logs out of xsession
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"  
-
-# scratchpad
-# for_window [instance="dropdown"] floating enable for_window [instance="dropdown"] resize set 625 400 
-# for_window [instance="dropdown"] move scratchpad for_window [instance="dropdown"] border pixel 2
 
 ## scratchpads
 
@@ -60,11 +57,10 @@ for_window [instance="shell"] border pixel 2
 # start scratchpad
 exec_always --no-startup-id urxvt -name shell
 
-# keybinding for sracthpad
+# keybinding for scratchpad
 bindsym $mod+Shift+u [instance="shell"] scratchpad show; [instance="shell"] move position center
 
-
-# application binds
+## application binds
 
 # start a terminal
 bindsym $mod+Return exec urxvt 
@@ -82,6 +78,8 @@ bindsym $mod+Shift+x exec i3lock --color "$bg-color"
 bindsym $mod+Shift+q kill 
 # start bitwarden
 bindsym $mod+b exec bitwarden-bin
+
+## window manipulation
 
 # change focus
 bindsym $mod+h focus left
@@ -117,6 +115,8 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container 
 bindsym $mod+a focus parent 
+
+## workspace config
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -155,7 +155,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-# resize config
+## resize config
 
 # resize window
 bindsym $mod+r mode "resize" 
@@ -187,6 +187,8 @@ set $urgent-bg-color     #E53935
 # hide title bars
 default_border pixel 0
 
+## colors
+
 # window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #76849b
@@ -194,16 +196,3 @@ client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #76849b
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #76849b
 
-# bar config
-# bar {
-#  	status_command /home/rt/.config/polybar/launch.sh 
-#	position top
-#	colors {
-#		background $bg-color
-#	    	separator #757575
-#		#                  border             background         text
-#		focused_workspace  $bg-color          $bg-color          $text-color
-#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-#	}
-#}
