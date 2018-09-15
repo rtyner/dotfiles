@@ -14,7 +14,8 @@ gaps inner 10
 gaps outer 8
 
 # startup programs
-exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
+#exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
+exec_always --no-startup-id xrandr --output DP-4 --rate 165.00 --mode 2560x1440
 exec_always --no-startup-id /usr/bin/discord
 exec_always --no-startup-id /home/rt/.config/polybar/launch.sh
 exec_always --no-startup-id xrdb .Xresources
