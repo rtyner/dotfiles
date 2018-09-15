@@ -5,3 +5,5 @@ fi
 xset +fp ~/.local/share/fonts
 
 exec i3
+
+wal -R

@@ -17,6 +17,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# pywal
+(cat ~/.cache/wal/sequences &)
+
 # User configuration
 
 # default permissions on newly created files

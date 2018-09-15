@@ -19,8 +19,8 @@ gaps outer 8
 exec_always --no-startup-id xrandr --output DP-4 --rate 165.00 --mode 2560x1440
 exec_always --no-startup-id /usr/bin/discord
 exec_always --no-startup-id /home/rt/.config/polybar/launch.sh
-exec_always --no-startup-id xrdb .Xresources
-exec --no-startup-id compton -b --config /home/rt/.config/compton.conf
+# exec_always --no-startup-id xrdb .Xresources
+exec_always --no-startup-id compton -b --config /home/rt/.config/compton.conf
 exec_always --no-startup-id feh --bg-scale /home/rt/wallpapers/wall.png
 # exec --no-startup-id insync start
 exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
@@ -187,10 +187,12 @@ set $urgent-bg-color     #E53935
 # hide title bars
 default_border pixel 0
 
-## colors
+## pywal colors
+
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
 
 # window colors
-#                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #76849b
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #76849b
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #76849b
