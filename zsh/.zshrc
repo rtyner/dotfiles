@@ -103,6 +103,7 @@ alias sudo='nocorrect sudo'
 alias today='calendar -A 0 -f /usr/share/calendar/calendar.mark | sort'
 alias dus='du -sckxh * | sort -nr'
 alias savecmd='vim ~/projects/linux-command-ref/useful-commands.md'
+alias seed='sftp wranks@genesis.whatbox.ca'
 
 # colorize grep output
 alias grep='grep --color=auto -n'
