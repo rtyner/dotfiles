@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/highway_animated_wallpaper__4k___3840x2160__by_axiomdesign-dc6du5w.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#06030E",
+        "foreground": "#9cabc3",
+        "cursor": "#9cabc3"
+    },
+    "colors": {
+        "color0": "#06030E",
+        "color1": "#2E3867",
+        "color2": "#54285A",
+        "color3": "#314775",
+        "color4": "#BD065F",
+        "color5": "#4A319B",
+        "color6": "#385485",
+        "color7": "#9cabc3",
+        "color8": "#6d7788",
+        "color9": "#2E3867",
+        "color10": "#54285A",
+        "color11": "#314775",
+        "color12": "#BD065F",
+        "color13": "#4A319B",
+        "color14": "#385485",
+        "color15": "#9cabc3"
+    }
+}

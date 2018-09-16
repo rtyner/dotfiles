@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/Uzl63iB.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#070F0E",
+        "foreground": "#e7af9c",
+        "cursor": "#e7af9c"
+    },
+    "colors": {
+        "color0": "#070F0E",
+        "color1": "#2F4E4C",
+        "color2": "#265357",
+        "color3": "#5B645B",
+        "color4": "#9E5435",
+        "color5": "#D15E38",
+        "color6": "#9B6C54",
+        "color7": "#e7af9c",
+        "color8": "#a17a6d",
+        "color9": "#2F4E4C",
+        "color10": "#265357",
+        "color11": "#5B645B",
+        "color12": "#9E5435",
+        "color13": "#D15E38",
+        "color14": "#9B6C54",
+        "color15": "#e7af9c"
+    }
+}
