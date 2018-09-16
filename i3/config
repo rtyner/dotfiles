@@ -24,6 +24,7 @@ exec_always --no-startup-id compton -b --config /home/rt/.config/compton.conf
 exec_always --no-startup-id feh --bg-scale /home/rt/wallpapers/wall.png
 # exec --no-startup-id insync start
 exec_always --no-startup-id /home/rt/projects/misc-scripts/xrandr.sh
+exec_always --no-startup-id wal -i /home/rt/wallpapers/wall.png
 
 ## i3 specific binds
 
