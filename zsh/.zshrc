@@ -3,7 +3,7 @@ export ZSH="/home/rt/.oh-my-zsh"
 
 export PATH=/home/rt/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 . /usr/share/zsh/site-contrib/powerline.zsh
 
