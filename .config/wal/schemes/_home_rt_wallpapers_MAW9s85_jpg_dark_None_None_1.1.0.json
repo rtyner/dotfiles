@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/MAW9s85.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#17110e",
+        "foreground": "#acbcce",
+        "cursor": "#acbcce"
+    },
+    "colors": {
+        "color0": "#17110e",
+        "color1": "#916648",
+        "color2": "#BC986F",
+        "color3": "#295F9C",
+        "color4": "#3F6BB7",
+        "color5": "#5E6498",
+        "color6": "#8975B5",
+        "color7": "#acbcce",
+        "color8": "#788390",
+        "color9": "#916648",
+        "color10": "#BC986F",
+        "color11": "#295F9C",
+        "color12": "#3F6BB7",
+        "color13": "#5E6498",
+        "color14": "#8975B5",
+        "color15": "#acbcce"
+    }
+}
