@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	precomposeunicode = true
+[remote "rtyner"]
+	url = https://github.com/rtyner
+	fetch = +refs/heads/*:refs/remotes/rtyner/*
+[alias]
+  gcm = commit
+  pu = push
+  pl = pull
+  cl = clone
+  ga = add
+  gr = rm
+  grm = rm -r
