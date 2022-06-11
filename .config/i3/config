@@ -2,6 +2,7 @@ set $mod Mod1
 # set $mod Mod4
 font pango:hack 12
 
+exec --no-startup-id dockd --daemon
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -15,7 +16,7 @@ hide_edge_borders both
 default_border pixel 0
 
 # gaps config
-gaps inner 10
+gaps inner 8
 gaps outer 8
 
 # Use pactl to adjust volume in PulseAudio.

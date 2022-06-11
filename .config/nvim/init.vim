@@ -1,29 +1,39 @@
-set modelines=0			  " CVE-2007-2438
-set encoding=utf-8		  " set UTF-8
-set nocompatible		  " use vim defaults
-set backspace=2			  " more powerful backspacing
-set showmatch			  " show matching pair of ()[]{}
-set number				  " set line numbers
-set relativenumber		  " relative line numbers
-set cursorline			  " highlight entire line cursor is on
-set hlsearch			  " highlight searches
-set ignorecase			  " ignore case when searching
-set clipboard=unnamed	  " let vim and system clipboard work together
-set splitbelow			  " bottom split
-set splitright			  " right split
+" Options
+set encoding=utf-8
+set modelines=0
+set colorcolumn=80
+set backupdir=~/.cache/vim
+set background=dark
+set clipboard=unnamedplus
+set completeopt=noinsert,menuone,noselect
+set cursorline
+set hidden
+set inccommand=split
 set mouse=a
-set wildmode=longest,list " get bash-like tab completion
-set incsearch			  " incremental search
-set colorcolumn=80        " Show the 80th char column.
-set noshowmode			  " hide mode display
-set ttyfast				  " speed up scrolling
-set backupdir=~/.cache/vim " stores backup files
+set number
+set relativenumber
+set splitbelow splitright
+set title
+set ttimeoutlen=0
+set wildmenu
+set hlsearch
+set ignorecase
+set showmatch
+set t_Co=256
+
+" Tabs size
+set expandtab
+set shiftwidth=2
+set tabstop=2
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+filetype plugin indent on
+syntax on
 
 " python specific configuration
 
@@ -44,28 +54,21 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix |
 
-" plugins
-
 call plug#begin()
- " Plugin Section
- Plug 'arcticicestudio/nord-vim'
- Plug 'ryanoasis/vim-devicons'
- Plug 'vim-airline/vim-airline'
-" Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
- Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " Appearance
+    Plug 'vim-airline/vim-airline'
+    Plug 'ryanoasis/vim-devicons'
+
+    " Utilities
+    Plug 'sheerun/vim-polyglot'
+    Plug 'jiangmiao/auto-pairs'
+    
+    " Theme
+    Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+    " Completion / linters / formatters
+    Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
+    Plug 'plasticboy/vim-markdown'
 call plug#end()
 
-" color schemes
-" if (has("termguicolors"))
-" set termguicolors
-" endif
-" syntax enable
-" colorscheme evening
-" colorscheme " open new split panes to right and below
-
-set splitright
-set splitbelow
+colorscheme tokyonight
