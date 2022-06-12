@@ -1,0 +1,78 @@
+{ config, pkgs, ...}: 
+
+{
+  nixpkgs.config.allowUnfree = true;
+  environment.systemPackages = with pkgs; [
+#    (polybar.override { i3Support = true; })
+    bc
+    i3ipc-glib
+    jq
+    vim 
+    wget
+    neofetch
+    curl
+    git
+    htop
+    python
+    dmenu
+    rofi
+    ranger
+    zsh
+    zsh-syntax-highlighting
+    oh-my-zsh
+    mullvad-vpn
+    rclone
+    rsync
+    unzip
+    pavucontrol
+    networkmanager_dmenu
+    neovim
+    alacritty
+    librewolf
+    vscodium
+    obsidian
+    chromium
+    firefox
+    discord
+    _1password-gui
+    scrot
+    rxvt-unicode
+    logseq
+    arandr
+    escrotum
+    obs-studio
+    pkgs.networkmanagerapplet    
+    gnome.cheese
+    ffmpeg-full
+    tmux 
+    screen
+    awscli
+    ansible
+    terraform
+    filezilla
+    vlc
+    fzf
+    bat
+    zathura
+    feh
+    imagemagick
+    youtube-dl
+    mtr
+    tcpdump
+    iperf
+    nload
+    protonvpn-cli
+    protonvpn-gui
+    wireguard-tools
+    unrar
+    whois
+    file
+    which
+    nmap
+    cryptsetup
+    libgnome-keyring
+    pcmanfm
+    lxappearance
+    nitrogen
+  ];
+}
