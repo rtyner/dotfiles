@@ -3,8 +3,13 @@
 {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-#    (polybar.override { i3Support = true; })
     bc
+    wmctrl
+    mpv
+    dunst
+    remmina
+    picom
+    pulseaudio
     i3ipc-glib
     jq
     vim 
@@ -12,44 +17,37 @@
     neofetch
     curl
     git
+    qutebrowser
+    brave
     htop
-    python
+    python3
     dmenu
     rofi
     ranger
     zsh
-    zsh-syntax-highlighting
-    oh-my-zsh
     mullvad-vpn
     rclone
     rsync
     unzip
     pavucontrol
+    yubico-pam
+    yubikey-manager
     networkmanager_dmenu
     neovim
     alacritty
     librewolf
     vscodium
-    obsidian
     chromium
     firefox
     discord
     _1password-gui
     scrot
-    rxvt-unicode
     logseq
     arandr
-    escrotum
-    obs-studio
     pkgs.networkmanagerapplet    
-    gnome.cheese
     ffmpeg-full
-    tmux 
-    screen
-    awscli
     ansible
     terraform
-    filezilla
     vlc
     fzf
     bat

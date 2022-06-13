@@ -10,8 +10,6 @@
     nerdfonts
     freefont_ttf
     powerline-fonts
-    font-awesome
-    font-awesome_4
     font-awesome_5
     dejavu_fonts
     google-fonts

@@ -1,4 +1,8 @@
-{ config, pkgs, ...}:
+# Edit this configuration file to define what should be installed on
+# your system.  Help is available in the configuration.nix(5) man page
+# and in the NixOS manual (accessible by running ‘nixos-help’).
+
+{ config, pkgs, ... }:
 
 {
   imports =
@@ -7,48 +11,79 @@
       ./packages.nix
       ./fonts.nix
       ./nvidia.nix
+      ./polybar.nix
+      ./steam.nix
+      ./bdp.nix
+      ./red.nix
     ];
-
-  # boot
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   # luks
   boot.initrd.secrets = {
     "/crypto_keyfile.bin" = null;
   };
 
-  boot.initrd.luks.devices."luks-6b30a91c-ebeb-42a4-a357-cc1a0ee33555".device = "/dev/disk/by-uuid/6b30a91c-ebeb-42a4-a357-cc1a0ee33555";
-  boot.initrd.luks.devices."luks-6b30a91c-ebeb-42a4-a357-cc1a0ee33555".keyFile = "/crypto_keyfile.bin";
-
-  # networking
-  networking.hostName = "nixos-dt";
-  networking.networkmanager.enable = true;
-
-  # time/locale
+  # boot
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.initrd.luks.devices."luks-49d8e90e-b0ef-44d3-b35e-687d20199f52".device = "/dev/disk/by-uuid/49d8e90e-b0ef-44d3-b35e-687d20199f52";
+  boot.initrd.luks.devices."luks-49d8e90e-b0ef-44d3-b35e-687d20199f52".keyFile = "/crypto_keyfile.bin";
+  
+  # tz and locale
   time.timeZone = "America/New_York";
   i18n.defaultLocale = "en_US.utf8";
 
-  # sound
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
+  # networking
+  networking.hostName = "nixos-dt"; 
+  networking.networkmanager.enable = true;
+
+  #hardware configs
+  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.support32Bit = true;    ## If compatibility with 32-bit applications is desired.
+  hardware.bluetooth.enable = true;
+
+  # virtualization
+  virtualisation.libvirtd.enable = true;
+  programs.dconf.enable = true;
+  environment.systemPackages = with pkgs; [ virt-manager ];
+
+  # yubikey
+  security.pam.yubico = {                                           
     enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
+    debug = true;
+    mode = "challenge-response";      
   };
+
+  # xserver
+  services.xserver.enable = true;
+  services.xserver.displayManager.lightdm.enable = true;
+  services.xserver.windowManager.i3.enable = true;
+  services.xserver.windowManager.i3.package = pkgs.i3-gaps;
+  services.xserver = {
+    layout = "us";
+    xkbVariant = "";
+  };
+
+  # services
+  services.mullvad-vpn.enable = true;
+  services.openssh.enable = true;
+  services.blueman.enable = true;
+  programs.mtr.enable = true;
+
+  # firewall
+  networking.firewall.allowedTCPPorts = [ 22 ];
+  networking.firewall.extraCommands = ''iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns'';
+  # networking.firewall.allowedUDPPorts = [ ... ];
+  # networking.firewall.enable = false;
 
   # user
   users.users.rt = {
     isNormalUser = true;
     description = "rt";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "libvirtd" ];
   };
 
-  #zsh
+  # zsh
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
@@ -63,32 +98,6 @@
     }
   ];
 
-   programs.mtr.enable = true;
-   programs.gnupg.agent = {
-     enable = true;
-     enableSSHSupport = true;
-   };
-
-  # services
-  services.openssh.enable = true;
-  services.printing.enable = true;
-  services.mullvad-vpn.enable = true;
-
-  # xserver
-  services.xserver.enable = true;
-  services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.windowManager.i3.enable = true;
-  services.xserver.windowManager.i3.package = pkgs.i3-gaps;
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
-  };
-
-  # firewall
-  networking.firewall.allowedTCPPorts = [ 22 ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # networking.firewall.enable = false;
-
-  system.stateVersion = "22.05"; # Did you read the comment?
+  system.stateVersion = "22.05"; 
 
 }
