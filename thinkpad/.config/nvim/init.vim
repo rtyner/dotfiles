@@ -62,7 +62,7 @@ call plug#begin()
     " Utilities
     Plug 'sheerun/vim-polyglot'
     Plug 'jiangmiao/auto-pairs'
-    
+    Plug 'ap/vim-css-color' 
     " Theme
     Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
