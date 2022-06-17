@@ -53,7 +53,7 @@ COLOR_DISCONNECTED="#f087bd"
 
 ## [Set 8 favorite VPN locations]
 # These are passed to your VPN as `$VPNCOMMAND_RELAY_SET_LOCATION <input>`.
-VPN_LOCATIONS=("us sea" "us chi" "us nyc" "us" "jp" "au" "fr" "br")
+VPN_LOCATIONS=("us sea" "us chi" "us nyc" "us mia" "us atl" "us ash" "us la" "us")
 
 ## [Set optional rofi menu style]. `man rofi` for help on location params.
 icon_connect="⇋"
