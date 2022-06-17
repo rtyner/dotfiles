@@ -4,8 +4,11 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     bc
+    xclip
+    obsidian
     wmctrl
     mpv
+    mpd
     dunst
     remmina
     picom
@@ -30,6 +33,7 @@
     rsync
     unzip
     pavucontrol
+    ripgrep
     yubico-pam
     yubikey-manager
     networkmanager_dmenu
@@ -54,7 +58,8 @@
     zathura
     feh
     imagemagick
-    youtube-dl
+    yt-dlp
+    qbittorrent
     mtr
     tcpdump
     iperf
@@ -68,7 +73,6 @@
     which
     nmap
     cryptsetup
-    libgnome-keyring
     pcmanfm
     lxappearance
     nitrogen

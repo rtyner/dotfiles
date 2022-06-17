@@ -54,6 +54,15 @@
     mode = "challenge-response";      
   };
 
+  # cron
+#  services.cron = {
+#    enable = true;
+#    systemCronJobs = [
+   #  "0 18 * * *    rt    . /etc/profile;    /home/rt/scripts/desktop-backup.sh"
+#      "*/5 * * * *      root    date >> /tmp/cron.log"
+#    ];
+  #};
+
   # xserver
   services.xserver.enable = true;
   services.xserver.displayManager.lightdm.enable = true;
