@@ -1,0 +1,202 @@
+{
+	"50742fd7-a29b-415e-b921-3649d0193eb3": {
+		"id": "50742fd7-a29b-415e-b921-3649d0193eb3",
+		"name": "WeakAuras",
+		"thumbnailUrl": "https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f",
+		"latestVersion": "4.0.2",
+		"clientType": 1,
+		"externalId": "10",
+		"gameVersion": "2.5.4",
+		"author": "The WeakAuras Team",
+		"downloadUrl": "https://github.com/WeakAuras/WeakAuras2/releases/download/4.0.2/WeakAuras-4.0.2-bcc.zip",
+		"externalUrl": "https://wowup.io/addons/10",
+		"providerName": "WowUpHub",
+		"channelType": 0,
+		"isIgnored": false,
+		"autoUpdateEnabled": false,
+		"autoUpdateNotificationsEnabled": false,
+		"releasedAt": "2022-06-01T01:33:01.000Z",
+		"summary": "<div align=\"center\"><h1>WeakAuras</h1><p><a href=\"https://github.com/WeakAuras/WeakAuras2/actions?workflow=CI\"><img src=\"https://github.com/WeakAuras/WeakAuras2/workflows/CI/badge.svg\" alt=\"Build Status\"></a><a href=\"https://discord.gg/weakauras\"><img src=\"https://img.shields.io/badge/discord-weakauras-738bd7.svg?style=flat\" alt=\"WeakAuras on Discord\"></a> <a href=\"https://www.patreon.com/weakauras\"><img src=\"https://img.shields.io/badge/patreon-donate-orange.svg\" alt=\"Patreon\"></a></p><p><img src=\"https://i.imgur.com/wwbxeCG.jpeg\" alt=\"Logo\"></p></div><p>WeakAuras is a powerful and flexible framework that allows the display of highly customizable graphics on World of Warcraft's user interface to indicate buffs, debuffs, and other relevant information. This addon was created to be a lightweight replacement for Power Auras but has since introduced more functionalities while remaining efficient and easy to use.</p><h2>Features</h2><ul><li>An intuitive and powerful configuration interface</li><li>Custom textures including all textures from Power Auras and Blizzard's spell alerts</li><li>Progress bars and textures that show the exact duration of auras</li><li>Displays based on auras, health, power (mana, rage, soul shards, holy power, etc.), cooldowns, combat events, runes, totems, items, and many other triggers</li><li>Preset and user-defined animations</li><li>Custom side-effects such as chat announcements or sounds</li><li>Grouping, which allows multiple displays to be positioned and configured at the same time</li><li>CPU optimizations such as conditional loading/unloading of displays, modularity, and prevention of full aura scanning</li><li>Powerful customization options, such as animation paths, on-show/on-hide code, and custom triggers, for Lua-savvy users</li></ul><h2>Quick Start</h2><p>To open the options window, type <code>/wa</code> or <code>/weakauras</code> into your chat and hit enter or use the minimap icon.</p><h2>Extensions</h2><ul><li><a href=\"https://weakauras.wtf\">WeakAuras Companion</a>: This application adds the missing link between Wago.io and the World of Warcraft addon, enabling you to update your auras in a convenient fashion.</li><li><a href=\"https://www.curseforge.com/wow/addons/weakauras-stop-motion\">WeakAuras_StopMotion</a>: This addon adds a new region type to WeakAuras that allows for stop motion animations. Stop Motion textures contain each frame of the animation as a separate image. The addon ships with a number of animations and it supports custom textures.</li><li><a href=\"https://www.curseforge.com/wow/addons/sharedmedia\">SharedMedia</a> for more bar textures.</li><li><a href=\"https://www.curseforge.com/wow/addons/shared-media-additional-fonts\">SharedMediaAdditionalFonts</a> for more fonts.</li><li><a href=\"https://www.curseforge.com/wow/addons/colorpickerplus\">ColorPickerPlus</a> for a better version of the WoW color picker that includes class color templates and a copy and paste function.</li></ul><h2>Documentation</h2><p>For in-depth documentation, see the <a href=\"https://github.com/WeakAuras/WeakAuras2/wiki\">wiki</a> page.</p><h2>Examples</h2><p>For some examples of what WeakAuras can do, take a look at <a href=\"https://wago.io/\">wago.io</a> where tons of people upload their creations and even feature complete interfaces utilizing WeakAuras!</p><h2>Problems</h2><ul><li>Please see the <a href=\"https://github.com/WeakAuras/WeakAuras2/wiki\">wiki</a> page.</li><li>If you've discovered something that's clearly wrong, or if you get an error, please create a <a href=\"https://github.com/WeakAuras/WeakAuras2/issues\">ticket</a>.</li><li>You're a programmer yourself and want to contribute? Check out our <a href=\"CONTRIBUTING.md\">contributing guidelines</a> to get started!</li><li>Feel free to join our <a href=\"https://discord.gg/weakauras\">Discord Community</a> to talk, get help and discuss everything WeakAuras!</li></ul><h2>Support</h2><p>If you want to help out with development without providing code yourself, you can always donate to the WeakAuras project maintainers using PayPal or become a Patreon:</p><p><a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=FRVH7EYXFDTUN\"><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif\" alt=\"WeakAuras on PayPal\"></a>  <a href=\"https://www.patreon.com/bePatron?u=3216523\"><img src=\"https://c5.patreon.com/external/logo/become_a_patron_button.png\" alt=\"Become a Patreon!\"></a></p>",
+		"screenshotUrls": [],
+		"dependencies": [],
+		"externalChannel": "Stable",
+		"isLoadOnDemand": false,
+		"externalLatestReleaseId": "39949",
+		"fundingLinks": [
+			{
+				"platform": "PATREON",
+				"url": "https://hub.wowup.io/addons/10/funding/patreon"
+			}
+		],
+		"latestChangelog": "<h1><a href=\"https://github.com/WeakAuras/WeakAuras2/tree/4.0.2\">4.0.2</a> (2022-06-01)</h1><p><a href=\"https://github.com/WeakAuras/WeakAuras2/compare/4.0.1...4.0.2\">Full Changelog</a></p><h2>Highlights</h2><ul><li>bug fixes</li></ul><h2>Commits</h2><p>InfusOnWoW (4):</p><ul><li>Work around invalid geometry even harder</li><li>Tweak visibility handling again</li><li>Tweak Profiling output</li><li>Fix Time formatting flooring the seconds, instead of ceiling them</li></ul><p>Jens N (1):</p><ul><li>Fixed issue with &quot;Array&quot;-type options in aura groups</li></ul><p>Stanzilla (2):</p><ul><li>Update TOC for Patch 9.2.5</li><li>CI: Speed up build times by using <code>plain-copy</code> for model path files</li></ul><p>mrbuds (10):</p><ul><li>clean more unused variables</li><li>fix chat message_voice condition not displayed correctly in options</li><li>remove BackdropTemplateMixin workaround</li><li>bufftrigger2: rename local frame to Buff2Frame</li><li>cleanup unused variables and functions</li><li>CreateFrame: use same casing for frameType</li><li>replace deprecated function C_LegendaryCrafting.GetRuneforgePowersByClassAndSpec</li><li>none of the time formatters have 2 arguments</li><li>rename WeakAuras.lua &quot;frame&quot; to &quot;WeakAurasFrame&quot;</li><li>Fix assignement ambiguity</li></ul>",
+		"latestChangelogVersion": "4.0.2",
+		"installationId": "74e6740b-041d-4af6-a51e-557441932bf4",
+		"installedFolderList": [
+			"WeakAuras",
+			"WeakAurasArchive",
+			"WeakAurasModelPaths",
+			"WeakAurasOptions",
+			"WeakAurasTemplates"
+		],
+		"installedExternalReleaseId": "39949",
+		"installedVersion": "4.0.2",
+		"installedAt": "2022-06-18T16:39:31.791Z",
+		"installedFolders": "WeakAuras,WeakAurasArchive,WeakAurasModelPaths,WeakAurasOptions,WeakAurasTemplates",
+		"externalIds": [
+			{
+				"id": "24910",
+				"providerName": "WowInterface"
+			},
+			{
+				"id": "VBNBxKx5",
+				"providerName": "Wago"
+			},
+			{
+				"id": "10",
+				"providerName": "WowUpHub"
+			}
+		]
+	},
+	"cfd6326e-c00a-47cf-bf32-122e3709c924": {
+		"id": "cfd6326e-c00a-47cf-bf32-122e3709c924",
+		"name": "Questie v6.12.2",
+		"thumbnailUrl": "https://avatars.githubusercontent.com/u/75445548?s=400&v=4",
+		"latestVersion": "6.12.2",
+		"clientType": 1,
+		"externalId": "47671",
+		"gameVersion": "2.5.4",
+		"author": "Aero/Logon/Muehe/TheCrux(BreakBB)/Drejjmit/Dyaxler/Schaka/Zoey/Everyone else",
+		"downloadUrl": "https://github.com/Questie/Questie/releases/download/v6.12.2/Questie-v6.12.2.zip",
+		"externalUrl": "https://wowup.io/addons/47671",
+		"providerName": "WowUpHub",
+		"channelType": 0,
+		"isIgnored": false,
+		"autoUpdateEnabled": false,
+		"autoUpdateNotificationsEnabled": false,
+		"releasedAt": "2022-06-11T15:46:50.000Z",
+		"summary": "<h1>Questie</h1><p><a href=\"https://discord.gg/s33MAYKeZd\"><img src=\"https://img.shields.io/badge/discord-Questie-738bd7\" alt=\"Discord\"></a><a href=\"https://img.shields.io/github/stars/Questie/Questie\"><img src=\"https://img.shields.io/github/stars/Questie/Questie\" alt=\"Stars\"></a></p><p><a href=\"https://github.com/Questie/Questie/releases/\"><img src=\"https://img.shields.io/github/downloads/Questie/Questie/total.svg\" alt=\"Downloads\"></a><a href=\"https://github.com/Questie/Questie/releases/latest\"><img src=\"https://img.shields.io/github/downloads/Questie/Questie/v6.12.2/total.svg\" alt=\"Downloads Latest\"></a><a href=\"https://github.com/Questie/Questie/releases/latest\"><img src=\"https://img.shields.io/github/release-date/Questie/Questie.svg\" alt=\"Date Latest\"></a><a href=\"https://github.com/Questie/Questie/commits/master\"><img src=\"https://img.shields.io/github/commits-since/Questie/Questie/latest.svg\" alt=\"Commits Since Latest\"></a></p><h2>Download</h2><p>We suggest you use the <a href=\"https://curseforge.overwolf.com/\">Curseforge Client</a> to manage your Wow addons in general. You will find Questie <a href=\"https://www.curseforge.com/wow/addons/questie\">here on Curseforge</a>.</p><p>Alternatively you can always use <a href=\"https://github.com/Questie/Questie/releases/latest\">the latest GitHub release</a> and follow the <a href=\"https://github.com/Questie/Questie/wiki/Installation-Guide\">Installation Guide</a> in the Wiki to get the latest version of Questie up and running.</p><p>If you have problems, please read the <a href=\"https://github.com/Questie/Questie/wiki/FAQ-for-Classic-(1.13)\">Frequently Asked Questions</a>.</p><h2>Information</h2><ul><li><a href=\"https://github.com/Questie/Questie/wiki/FAQ\">Frequently Asked Questions</a></li><li>Come chat with us on <a href=\"https://discord.gg/s33MAYKeZd\">our Discord server</a>.</li><li>You can use the <a href=\"https://github.com/Questie/Questie/issues\">issue tracker</a> to report bugs and post feature requests (requires a Github account).</li><li>When creating an issue please follow the templated structure to speed up a possible fix.</li><li>If you get an error message from the WoW client, please include the <strong>complete</strong> text or a screenshot of it in your report.<ul><li>You need to enter <code>/console scriptErrors 1</code> once in the ingame chat for Lua error messages to be shown. You can later disable them again with <code>/console scriptErrors 0</code>.</li></ul></li></ul><p>Trust us it's (Good)!</p><h2>Contribution</h2><p><a href=\"http://makeapullrequest.com\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a></p><ul><li>We are happy about every help and contribution we get, so feel free to submit a Pull Request on Github</li><li>Translators can search for missing translations by: <code>[&quot;&lt;yourLanguage&gt;&quot;] = nil</code> (e.g. <code>[&quot;deDE&quot;] = nil</code>) and replace the <code>nil</code> with a string of the new translation. Current translations can be found in the <a href=\"https://github.com/Questie/Questie/tree/master/Localization/Translations\">Translation folder</a></li><li>Additional information you might find interesting can be found <a href=\"https://github.com/Questie/Questie/wiki/Contributing\">here</a></li></ul><h2>Donation</h2><p>If you'd like to support the development of Questie by donating, you can do so via PayPal:</p><p><a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=aero1861%40gmail%2ecom&lc=CA&item_name=Questie%20Devs&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted'><img src=\"https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif\"/></a></p><h2>Features</h2><h3>Show quests on map</h3><ul><li>Show notes for quest start points, turn in points, and objectives.</li></ul><p><img src=\"https://i.imgur.com/4abi5yu.png\" alt=\"Questie Quest Givers\"><img src=\"https://i.imgur.com/DgvBHyh.png\" alt=\"Questie Complete\"><img src=\"https://i.imgur.com/uPykHKC.png\" alt=\"Questie Tooltip\"></p><h3>Quest Tracker</h3><ul><li>Improved quest tracker:<ul><li>Automatically tracks quests on accepting (instead of progressing)</li><li>Can show all 20 quests from the log (instead of default 5)</li><li>Left click quest to open quest log (configurable)</li><li>Right-click for more options, e.g.:<ul><li>Focus quest (makes other quest icons translucent)</li><li>Point arrow towards objective (requires TomTom addon)</li></ul></li></ul></li></ul><p><img src=\"https://user-images.githubusercontent.com/8838573/67285596-24dbab00-f4d8-11e9-9ae1-7dd6206b5e48.png\" alt=\"QuestieTracker\"></p><h3>Quest Communication</h3><ul><li>You can see party members quest progress on the tooltip.</li><li>At least Questie version 5.0.0 is required by everyone in the party for it to work, tell your friends to update!</li></ul><p><img src=\"https://cdn.discordapp.com/attachments/263036731165638656/636099163460861962/unknown.png\" alt=\"QuestieComms\"></p><h3>Tooltips</h3><ul><li>Show tooltips on map notes and quest NPCs/objects.</li><li>Holding Shift while hovering over a map icon displays more information, like quest XP.</li></ul><p><img src=\"https://cdn.discordapp.com/attachments/579999220170227716/635540231306608641/unknown.png\" alt=\"QuestXP\"></p><h4>Quest Information</h4><p><img src=\"https://cdn.discordapp.com/attachments/579999220170227716/634656829619699712/unknown.png\" alt=\"TooltipDungeon\"></p><ul><li>Event quests are shown when events are active!</li></ul><p><img src=\"https://cdn.discordapp.com/attachments/263040777658171392/636159292336242688/unknown.png\" alt=\"Event\"></p><h4>Waypoints</h4><ul><li>Waypoint lines for quest givers showing their pathing.</li></ul><p><img src=\"https://media.discordapp.net/attachments/263040777658171392/643203302993035294/unknown.png\" alt=\"Waypoints\"></p><h3>Journey Log</h3><ul><li>Questie records the steps of your journey in the &quot;My Journey&quot; window. (right-click on minimap button to open)</li></ul><p><img src=\"https://user-images.githubusercontent.com/8838573/67285651-3cb32f00-f4d8-11e9-95d8-e8ceb2a8d871.png\" alt=\"Journey\"></p><h3>Quests by Zone</h3><ul><li>Questie lists all the quests of a zone divided between completed and available quest. Gotta complete 'em all. (right-click on minimap button to open)</li></ul><p><img src=\"https://user-images.githubusercontent.com/8838573/67285665-450b6a00-f4d8-11e9-9283-325d26c7c70d.png\" alt=\"QuestsByZone\"></p><h3>Search</h3><ul><li>Questie's database can be searched. (right-click on minimap button to open)</li></ul><p><img src=\"https://user-images.githubusercontent.com/8838573/67285691-4f2d6880-f4d8-11e9-8656-b3e37dce2f05.png\" alt=\"Search\"></p><h3>Configuration</h3><ul><li>Extensive configuration options. (left-click on minimap button to open)</li></ul><p><img src=\"https://user-images.githubusercontent.com/8838573/67285731-61a7a200-f4d8-11e9-9026-b1eeaad0d721.png\" alt=\"config\"></p>",
+		"screenshotUrls": [],
+		"dependencies": [],
+		"externalChannel": "Stable",
+		"isLoadOnDemand": false,
+		"externalLatestReleaseId": "40167",
+		"fundingLinks": [],
+		"latestChangelog": "<h2>General Fixes</h2><ul><li>Don't show quests that are same level as player but not available yet (Thanks Knoxley#4444 for reporting)</li><li>Removed SendAddonMessage to Reputable addon to prevent network issues for some users (Thanks @Road-block for reporting)</li></ul><h2>Quest Fixes</h2><ul><li>Fixed quest Thunderbrew (117) name and related items (#3520)(Thanks @gouletr)</li><li>Marked quests 5166 and 5167 as non-repeatable (Thanks Pan#0003 and Dom6#6515 for reporting)</li></ul><h2>Localization Fixes</h2><ul><li>[esES][esMX] Update translations (Thanks @anon1231823)</li><li>[zhCN] Update translations (#3549)(#3554)(Thanks @nanjuekaien1)</li></ul>",
+		"latestChangelogVersion": "6.12.2",
+		"installationId": "74e6740b-041d-4af6-a51e-557441932bf4",
+		"installedFolderList": [
+			"Questie"
+		],
+		"installedExternalReleaseId": "40167",
+		"installedVersion": "6.12.2",
+		"installedAt": "2022-06-18T16:39:35.447Z",
+		"installedFolders": "Questie",
+		"externalIds": [
+			{
+				"id": "47671",
+				"providerName": "WowUpHub"
+			}
+		]
+	},
+	"96980e42-b543-46e6-9da8-5118b5119fc5": {
+		"id": "96980e42-b543-46e6-9da8-5118b5119fc5",
+		"name": "Deadly Boss Mods (DBM)",
+		"thumbnailUrl": "https://wago-addons.ams3.digitaloceanspaces.com/thumbnails/mYHQ8mNxd0yMM2uQZdvKa9FcCpUVaqODs95QyrrN.png",
+		"latestVersion": "DBM-2.5.37-bcc",
+		"clientType": 1,
+		"externalId": "qv633o6b",
+		"gameVersion": "2.5.4",
+		"author": "Stanzilla, MysticalOS, QartemisT",
+		"downloadUrl": "https://addons.wago.io/external/download/kQA88A6V?link=eyJpdiI6ImNzQytMMVdKZWV6RnA4M25QK0pxNmc9PSIsInZhbHVlIjoiRjFva2p6NjJuUkNvbGdpYWZKcS9UaDM3Z2wyRWdES3oyZTVSNzNuaVJKbWhTYUZFVEllUWdvYjN0c1ZhTEs4T0VhY0FKMExxRFNzUHJpL1RvS0EydWZVSkcyZGdjWE5LbENNMUxoZUNzeFNIbWlnN0twMGZyL0V2cVA2ejZQc0R4c3Jmb2N1VGJ5bGVaQSs4eWx6Z1grbEg4elVldHV1MU0rODhSL2N1Vjg2N251S1AyeDlIbTVhRnhoMWI3VjVKK3NVSmQ4cTkzYVlCcTFpb2h4MnQxUT09IiwibWFjIjoiNDAxZWFkNmI0Y2ExM2VkZjA3NDM0NDBjZTMzNWI0NzkxN2U3ZDZlODA1NTdiOTViNjAwNTM4NzcyZWI2YTRiZCIsInRhZyI6IiJ9",
+		"externalUrl": "https://addons.wago.io/addons/deadly-boss-mods-dbm",
+		"providerName": "Wago",
+		"channelType": 0,
+		"isIgnored": false,
+		"autoUpdateEnabled": false,
+		"autoUpdateNotificationsEnabled": false,
+		"releasedAt": "2022-06-07T18:48:53.000Z",
+		"summary": "",
+		"dependencies": [],
+		"externalChannel": "Stable",
+		"isLoadOnDemand": false,
+		"fundingLinks": [],
+		"latestChangelogVersion": "DBM-2.5.37-bcc",
+		"installationId": "74e6740b-041d-4af6-a51e-557441932bf4",
+		"installedFolderList": [
+			"DBM-AQ20",
+			"DBM-AQ40",
+			"DBM-Azeroth",
+			"DBM-BWL",
+			"DBM-BlackTemple",
+			"DBM-Core",
+			"DBM-GUI",
+			"DBM-Hyjal",
+			"DBM-Karazhan",
+			"DBM-MC",
+			"DBM-Naxx",
+			"DBM-Onyxia",
+			"DBM-Outlands",
+			"DBM-Party-BC",
+			"DBM-Party-Classic",
+			"DBM-Serpentshrine",
+			"DBM-StatusBarTimers",
+			"DBM-Sunwell",
+			"DBM-TheEye",
+			"DBM-VPVEM",
+			"DBM-WorldEvents",
+			"DBM-ZG",
+			"DBM-ZulAman"
+		],
+		"installedVersion": "DBM-2.5.37-bcc",
+		"installedAt": "2022-06-18T16:41:15.932Z",
+		"installedFolders": "DBM-AQ20,DBM-AQ40,DBM-Azeroth,DBM-BWL,DBM-BlackTemple,DBM-Core,DBM-GUI,DBM-Hyjal,DBM-Karazhan,DBM-MC,DBM-Naxx,DBM-Onyxia,DBM-Outlands,DBM-Party-BC,DBM-Party-Classic,DBM-Serpentshrine,DBM-StatusBarTimers,DBM-Sunwell,DBM-TheEye,DBM-VPVEM,DBM-WorldEvents,DBM-ZG,DBM-ZulAman",
+		"externalIds": [
+			{
+				"id": "8814",
+				"providerName": "WowInterface"
+			},
+			{
+				"id": "qv633o6b",
+				"providerName": "Wago"
+			}
+		]
+	},
+	"b49ddf92-cd4a-40c9-a4c6-f33fff6431a8": {
+		"id": "b49ddf92-cd4a-40c9-a4c6-f33fff6431a8",
+		"name": "RXPGuides",
+		"thumbnailUrl": "https://avatars.githubusercontent.com/u/84252897?v=4",
+		"latestVersion": "RXPGuides-3.1.1.zip",
+		"clientType": 1,
+		"externalId": "RestedXP/RXPGuides",
+		"gameVersion": "2.5.4",
+		"author": "RestedXP",
+		"downloadUrl": "https://github.com/RestedXP/RXPGuides/releases/download/3.1.1/RXPGuides-3.1.1.zip",
+		"externalUrl": "https://github.com/RestedXP/RXPGuides",
+		"providerName": "GitHub",
+		"channelType": 0,
+		"isIgnored": false,
+		"autoUpdateEnabled": false,
+		"autoUpdateNotificationsEnabled": false,
+		"releasedAt": "2022-06-18T19:17:53.000Z",
+		"dependencies": [],
+		"externalChannel": "Stable",
+		"isLoadOnDemand": false,
+		"fundingLinks": [],
+		"latestChangelogVersion": "RXPGuides-bc.zip",
+		"installationId": "74e6740b-041d-4af6-a51e-557441932bf4",
+		"installedFolderList": [
+			"RXPGuides"
+		],
+		"installedVersion": "RXPGuides-3.1.1.zip",
+		"installedAt": "2022-06-19T17:46:15.393Z",
+		"installedFolders": "RXPGuides",
+		"externalIds": [
+			{
+				"id": "RestedXP/RXPGuides",
+				"providerName": "GitHub"
+			}
+		],
+		"summary": "RXPGuides is a platform to write in-game leveling guides for WoW Classic",
+		"latestChangelog": "<h1>RXP Guides</h1><h2><a href=\"https://github.com/RestedXP/RXPGuides/tree/3.1.1\">3.1.1</a> (2022-06-18)</h2><p><a href=\"https://github.com/RestedXP/RXPGuides/compare/3.1.0...3.1.1\">Full Changelog</a> <a href=\"https://github.com/RestedXP/RXPGuides/releases\">Previous Releases</a></p><ul><li>quest turn in fixes</li><li>guide update</li><li>tame</li><li>BE changes</li><li>tbc start</li><li>the</li><li>durotar/early barrens</li><li>Update RestedXP Horde 1-10 Tauren.lua</li><li>Update RestedXP Horde 1-6 Undead.lua</li><li>Update RestedXP Horde 1-20 BloodElf.lua</li><li>23-30A TBC - Calam update</li><li>Update RestedXP Alliance 23-30.lua</li><li>Update RestedXP Alliance 11-23.lua</li><li>Update RestedXP Alliance 1-23 Draenei.lua</li><li>Update RestedXP Alliance 1-23 Draenei.lua</li><li>Update RestedXP Alliance 1-23 Draenei.lua</li><li>1-23 Draenei TBC - Calam update</li><li>1-14 Dwarf TBC - Calam update</li><li>1-11 NE TBC - Calam update</li><li>1-14 UD - Calam update</li><li>Update RestedXP Alliance 1-14 Human.lua</li></ul>"
+	}
+}
