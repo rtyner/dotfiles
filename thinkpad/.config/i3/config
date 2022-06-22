@@ -10,11 +10,11 @@ gaps outer 8
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
+exec --no-startup-id redshift
+exec --no-startup-id dockd --daemon
 exec_always --no-startup-id feh --bg-scale /home/rt/wallpaper/wallhaven-j3z9y5.png
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id redshift
 exec_always --no-startup-id picom &
-exec_always --no-startup-id dockd --daemon
 
 # program binds
 bindsym $mod+Return exec alacritty
