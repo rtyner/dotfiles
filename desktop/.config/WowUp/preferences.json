@@ -1,0 +1,107 @@
+{
+	"enable_system_notifications": "false",
+	"collapse_to_tray": "true",
+	"use_hardware_acceleration": "true",
+	"current_theme": "default-theme",
+	"wowup_release_channel_2_6": "1",
+	"use_symlink_mode": "false",
+	"enable_app_badge": "false",
+	"trusted_domains": [
+		"wowup.io",
+		"dev.wowup.io",
+		"discord.gg",
+		"www.patreon.com",
+		"github.com",
+		"wago.io",
+		"addons.wago.io"
+	],
+	"acct_push_enabled": "false",
+	"install_id": "89339b55-2141-4edd-9999-ea3d5c1245f1",
+	"retail_default_addon_channel": "0",
+	"retail_default_auto_update": "false",
+	"blizzard_agent_path": "",
+	"selected_language": "en",
+	"classic_default_addon_channel": "0",
+	"classic_default_auto_update": "false",
+	"retailptr_default_addon_channel": "0",
+	"retailptr_default_auto_update": "false",
+	"classicptr_default_addon_channel": "0",
+	"classicptr_default_auto_update": "false",
+	"beta_default_addon_channel": "0",
+	"beta_default_auto_update": "false",
+	"classicbeta_default_addon_channel": "0",
+	"classicbeta_default_auto_update": "false",
+	"classicera_default_addon_channel": "0",
+	"classicera_default_auto_update": "false",
+	"classiceraptr_default_addon_channel": "0",
+	"classiceraptr_default_auto_update": "false",
+	"addon_providers": [
+		{
+			"providerName": "wago",
+			"enabled": true,
+			"canEdit": true
+		}
+	],
+	"wago_prompt": "true",
+	"telemetry_enabled": "false",
+	"my_addons_sort_order": [
+		{
+			"colId": "name",
+			"sort": null
+		},
+		{
+			"colId": "sortOrder",
+			"sort": "asc"
+		},
+		{
+			"colId": "installedAt",
+			"sort": null
+		},
+		{
+			"colId": "latestVersion",
+			"sort": null
+		},
+		{
+			"colId": "releasedAt",
+			"sort": null
+		},
+		{
+			"colId": "gameVersion",
+			"sort": null
+		},
+		{
+			"colId": "externalChannel",
+			"sort": null
+		},
+		{
+			"colId": "providerName",
+			"sort": null
+		},
+		{
+			"colId": "author",
+			"sort": null
+		}
+	],
+	"update_notes_popup_version": "2.8.2",
+	"wow_installations": [
+		{
+			"id": "74e6740b-041d-4af6-a51e-557441932bf4",
+			"clientType": 1,
+			"defaultAddonChannelType": 0,
+			"defaultAutoUpdate": false,
+			"label": "Classic",
+			"location": "/home/rt/Games/world-of-warcraft-classic/drive_c/Program Files (x86)/World of Warcraft/_classic_/WowClassic.exe",
+			"selected": true
+		}
+	],
+	"main-window-state": {
+		"width": 1262,
+		"height": 1370,
+		"centered": false,
+		"x": 1284,
+		"y": 56,
+		"isMaximized": false,
+		"isFullScreen": false
+	},
+	"addon_migration_version": "2.8.2"
+}
