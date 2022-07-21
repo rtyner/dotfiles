@@ -25,4 +25,4 @@ UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/var/log  	btrfs     	rw,relatime,comp
 
 //10.1.1.6/red-share /home/rt/mnt/red cifs _netdev,nofail,mfsymlinks,credentials=/home/rt/.config/smb/.creds,user 0 0
 
-10.1.1.157:/arch-storage /home/rt/mnt/arch-storage nfs defaults,timeo=900,retrans=5,_netdev,user 0 0 
+10.1.1.22:/arch-storage /home/rt/mnt/arch-storage nfs defaults,timeo=900,retrans=5,_netdev,user 0 0 

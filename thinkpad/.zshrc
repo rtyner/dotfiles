@@ -19,7 +19,7 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin::$HOME/.local/lib/python3.10/site-packages:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 HYPHEN_INSENSITIVE="true"
 zstyle ':omz:update' mode reminder  
@@ -75,11 +75,11 @@ alias v='nvim'
 alias cls='clear'
 alias myip='curl icanhazip.com'
 alias ll='ls -lah --color=auto'
-alias ls='ls -lh --color=auto'
+alias ls='ls --color=auto'
 alias dus='du -sckxh * | sort -nr'
 alias randpw="openssl rand -base64 64"
 alias grep='grep --color=auto -n'
-
+alias seed='ssh dga9ffhoc3bu@juno.whatbox.ca'
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
 export EDITOR='nvim'

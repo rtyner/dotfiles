@@ -10,9 +10,9 @@ gaps outer 8
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
-exec --no-startup-id redshift
+#exec --no-startup-id redshift
 exec --no-startup-id dockd --daemon
-exec_always --no-startup-id feh --bg-scale /home/rt/wallpaper/wallhaven-j3z9y5.png
+exec_always --no-startup-id feh --bg-scale /home/rt/wallpaper/wallhaven-6ozkzl.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom &
 
@@ -21,6 +21,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+f exec librewolf
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+x exec i3lock --color "$bg-color" 
+bindsym $mod+Shift+s exec flameshot gui
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
