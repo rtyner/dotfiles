@@ -1,0 +1,94 @@
+{
+    "targets": [
+        {
+            "host": "root@opnsense.local.rtynerlabs.io",
+            "friendly": "opensense.local.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "root@pve-1.local.rtynerlabs.io",
+            "friendly": "pve-1.local.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "root@pve-2.local.rtynerlabs.io",
+            "friendly": "pve-2.local.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "dns-1.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "dns-2.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "linux-dev-1.local.rtynerlabs.io",
+            "friendly": "linux dev server for vscode",
+            "options": []
+        },
+        {
+            "host": "arch-download.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "nfs-file-1.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "prod-docker-1.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "prod-docker-2.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "nextcloud.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "grafana-01.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "prometheus-01.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "build-prod-1.local.rtynerlabs.io",
+            "friendly": "",
+            "options": []
+        },
+        {
+            "host": "10.1.1.21",
+            "friendly": "arch-download.local.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "rt@150.230.169.134",
+            "friendly": "oc-prod-docker-01.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "rt@150.136.84.183",
+            "friendly": "oc-piped-prod-01.rtynerlabs.io",
+            "options": []
+        },
+        {
+            "host": "core-sw-01.local.rtynerlabs.io",
+            "friendly": "core-sw-01",
+            "options": []
+        }
+    ]
+}
