@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/PcSwg1C.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#02081F",
+        "foreground": "#87cfda",
+        "cursor": "#87cfda"
+    },
+    "colors": {
+        "color0": "#02081F",
+        "color1": "#1A3A85",
+        "color2": "#144E8E",
+        "color3": "#19699B",
+        "color4": "#4A72A8",
+        "color5": "#139AAF",
+        "color6": "#39ACBF",
+        "color7": "#87cfda",
+        "color8": "#5e9098",
+        "color9": "#1A3A85",
+        "color10": "#144E8E",
+        "color11": "#19699B",
+        "color12": "#4A72A8",
+        "color13": "#139AAF",
+        "color14": "#39ACBF",
+        "color15": "#87cfda"
+    }
+}

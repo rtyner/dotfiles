@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/LeyBZGn.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0D0C13",
+        "foreground": "#c7beb0",
+        "cursor": "#c7beb0"
+    },
+    "colors": {
+        "color0": "#0D0C13",
+        "color1": "#323547",
+        "color2": "#443C4B",
+        "color3": "#3D4352",
+        "color4": "#4D494D",
+        "color5": "#655D5D",
+        "color6": "#89725B",
+        "color7": "#c7beb0",
+        "color8": "#8b857b",
+        "color9": "#323547",
+        "color10": "#443C4B",
+        "color11": "#3D4352",
+        "color12": "#4D494D",
+        "color13": "#655D5D",
+        "color14": "#89725B",
+        "color15": "#c7beb0"
+    }
+}

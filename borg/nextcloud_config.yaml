@@ -1,0 +1,31 @@
+# Updated ~/.config/borgmatic/config.yaml
+location:
+    source_directories:
+        - ~/nextcloud
+
+    one_file_system: true
+
+    repositories:
+        - 'ssh://repo_URL/./repo'
+
+    exclude_caches: true
+
+storage:
+    compression: auto,zstd
+    encryption_passphrase: changeme
+    archive_name_format: '{hostname}-{now}'
+
+retention:
+    keep_daily: 3
+    keep_weekly: 4
+    keep_monthly: 12
+    keep_yearly: 2
+    prefix: '{hostname}-'
+
+consistency:
+    checks:
+        # uncomment to always do integrity checks. (takes long time for large repos)
+        #- repository
+        - disabled
+
+    prefix: '{hostname}-'
