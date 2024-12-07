@@ -22,7 +22,7 @@ antigen apply
 export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.local/lib/python3.10/site-packages:$PATH
 export ZSH="$HOME/.oh-my-zsh"
 HYPHEN_INSENSITIVE="true"
-zstyle ':omz:update' mode reminder
+zstyle ':omz:update' mode reminder  
 DISABLE_AUTO_TITLE="true"
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -34,22 +34,25 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 set -o vi
 
-# Aliases
-# i3
-alias i3c='vim ~/.config/i3/config'
-alias vrc='vim ~/.vimrc'
+alias vim="nvim"
+alias nd='nvim .'
+alias nv='nvim'
 
-# terraform
+alias kc='kubectl'
+alias kcn='kubectl get node -o wide'
+alias kcp='kubectl get pods -A'
+alias kcd='kubectl get daemonset -A'
+
 alias tfi='terraform init'
 alias tfp='terraform plan'
 alias tfa='terraform apply -auto-approve'
 alias tfd='terraform destroy'
 
-# zsh
+alias i3c='vim ~/.config/i3/config'
+alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 alias zrl='source ~/.zshrc && echo zsh config reloaded'
 
-# git
 alias ga='git add'
 alias gp='git push'
 alias gl='git log'
@@ -66,13 +69,10 @@ alias gcl='git clone'
 alias gta='git tag -a -m'
 alias gf='git reflog'
 
-# pacman
 alias update='sudo pacman -Syu'
 alias updatedb='sudo pacman -Syy'
 alias install='sudo pacman -S'
 alias remove='sudo pacman -Rs'
-
-# misc
 alias ..='cd .. && ls'
 alias ...='cd ... && ls'
 alias v='vim'
@@ -84,39 +84,15 @@ alias dus='du -sckxh * | sort -nr'
 alias randpw="openssl rand -base64 64"
 alias grep='grep --color=auto -n'
 alias seed='ssh dga9ffhoc3bu@juno.whatbox.ca'
-alias dots='cd ~/repos/dotfiles'
 
-# ansible
+alias hl='cd ~/repos/homelab'
+
 alias asp='ansible-playbook'
-
-# Functions
-# Update all packages
-update_all() {
-    brew update && brew upgrade
-    npm update -g
-    pip install --upgrade pip
-    pip list --outdated | cut -d ' ' -f1 | xargs -n1 pip install -U
-}
-
-# Quick navigation
-cdd() {
-    cd ~/Documents
-}
-cdr() {
-    cd ~/repos
-}
-hl() {
-    cd ~/repos/homelab
-}
-dots() {
-    cd ~/repos/dotfiles
-}
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-    export EDITOR='vim'
+export EDITOR='vim'
 else
-    export EDITOR='vim'
+export EDITOR='vim'
 fi
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -126,3 +102,8 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
+eval "$(starship init zsh)"
