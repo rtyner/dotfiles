@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/FsIVsFQ.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1118",
+        "foreground": "#c6a2a9",
+        "cursor": "#c6a2a9"
+    },
+    "colors": {
+        "color0": "#0c1118",
+        "color1": "#2B3450",
+        "color2": "#5B324F",
+        "color3": "#294B60",
+        "color4": "#5D5561",
+        "color5": "#8F2D38",
+        "color6": "#9E324D",
+        "color7": "#c6a2a9",
+        "color8": "#8a7176",
+        "color9": "#2B3450",
+        "color10": "#5B324F",
+        "color11": "#294B60",
+        "color12": "#5D5561",
+        "color13": "#8F2D38",
+        "color14": "#9E324D",
+        "color15": "#c6a2a9"
+    }
+}

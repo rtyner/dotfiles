@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"ansible-lint":"venv\/bin\/ansible-lint"},"opt":{}},"name":"ansible-lint","secondary_sources":[],"metrics":{"completion_time":1734051342702,"start_time":1734051334476},"primary_source":{"id":"pkg:pypi\/ansible-lint@24.12.2","type":"registry+v1"}}

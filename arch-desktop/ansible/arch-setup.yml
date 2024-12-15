@@ -1,0 +1,94 @@
+---
+- name: arch setup
+  hosts: localhost
+  become: true
+  vars_files:
+    - basic_packages.yml
+    - aur_packages.yml
+  vars:
+    username: rt
+    dotfiles_repo: https://github.com/rtyner/dotfiles.git
+
+  tasks:
+    - name: update pacman
+      pacman:
+        update_cache: yes
+
+    - name: install packages
+      pacman:
+        name: "{{ basic_packages }}"
+        state: present
+
+    - name: create dirs
+      file:
+        path: "{{ item }}"
+        state: directory
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: "0755"
+      loop:
+        - "/home/{{ username }}/mount"
+        - "/home/{{ username }}/mount/red"
+        - "/home/{{ username }}/mount/bdp"
+        - "/home/{{ username }}/repos"
+        - "/home/{{ username }}/working"
+
+    - name: configure mounts in fstab
+      lineinfile:
+        path: /etc/fstab
+        line: "{{ item }}"
+        state: present
+      with_items:
+        - "//10.1.1.6/big-dick-pool /home/{{ username }}/mount/bdp cifs _netdev,nofail,credentials=/home/{{ username }}/.config/smb/.creds,user 0 0"
+        - "//10.1.1.6/red /home/{{ username }}/mount/red cifs _netdev,nofail,credentials=/home/{{ username }}/.config/smb/.creds,user 0 0"
+
+    - name: Clone dotfiles repository
+      git:
+        repo: "{{ dotfiles_repo }}"
+        dest: "/home/{{ username }}/repos/dotfiles"
+        clone: yes
+        update: no
+      become_user: "{{ username }}"
+
+    - name: copy dotfiles
+      copy:
+        src: "/home/{{ username }}/dotfiles/arch-desktop/{{ item }}"
+        dest: "/home/{{ username }}/.config/"
+      loop:
+        - i3
+        - alacrity
+        - neofetch
+        - nvim
+        - picom
+        - polybar
+
+    - name: install yay
+      block:
+        - name: clone yay repo
+          git:
+            repo: https://aur.archlinux.org/yay.git
+            dest: /tmp/yay
+          become_user: "{{ username }}"
+
+        - name: build and install yay
+          command:
+            cmd: makepkg -si --noconfirm
+            chdir: /tmp/yay
+          become_user: "{{ username }}"
+
+        - name: clean up build dir
+          file:
+            path: /tmp/yay
+            state: absent
+
+    - name: install aur packages
+      become_user: "{{ username }}"
+      command: yay -S {{ item }} --noconfirm
+      loop: "{{ aur_packages }}"
+
+    - name: configure nopasswd sudo
+      lineinfile:
+        path: /etc/sudoers
+        line: "{{ username }} ALL=(ALL) NOPASSWD:ALL"
+        validate: /usr/sbin/visudo -cf %s
+        state: present

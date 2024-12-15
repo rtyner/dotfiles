@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/eDMqI72.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#040603",
+        "foreground": "#c3d49e",
+        "cursor": "#c3d49e"
+    },
+    "colors": {
+        "color0": "#040603",
+        "color1": "#58675D",
+        "color2": "#3A8703",
+        "color3": "#4C9108",
+        "color4": "#67AA0E",
+        "color5": "#75AA36",
+        "color6": "#99DD0B",
+        "color7": "#c3d49e",
+        "color8": "#88946e",
+        "color9": "#58675D",
+        "color10": "#3A8703",
+        "color11": "#4C9108",
+        "color12": "#67AA0E",
+        "color13": "#75AA36",
+        "color14": "#99DD0B",
+        "color15": "#c3d49e"
+    }
+}

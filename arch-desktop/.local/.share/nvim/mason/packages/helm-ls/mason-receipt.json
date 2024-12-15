@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"helm_ls":"helm_ls_linux_amd64"},"opt":{}},"name":"helm-ls","secondary_sources":[],"metrics":{"completion_time":1734051467116,"start_time":1734051465089},"primary_source":{"id":"pkg:github\/mrjosh\/helm-ls@v0.1.0","type":"registry+v1"}}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/rt/wallpapers/JUVyqpG.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0C0B0F",
+        "foreground": "#a4bfad",
+        "cursor": "#a4bfad"
+    },
+    "colors": {
+        "color0": "#0C0B0F",
+        "color1": "#152D4D",
+        "color2": "#2B354D",
+        "color3": "#193666",
+        "color4": "#2A4F64",
+        "color5": "#525D5B",
+        "color6": "#8E6F44",
+        "color7": "#a4bfad",
+        "color8": "#728579",
+        "color9": "#152D4D",
+        "color10": "#2B354D",
+        "color11": "#193666",
+        "color12": "#2A4F64",
+        "color13": "#525D5B",
+        "color14": "#8E6F44",
+        "color15": "#a4bfad"
+    }
+}

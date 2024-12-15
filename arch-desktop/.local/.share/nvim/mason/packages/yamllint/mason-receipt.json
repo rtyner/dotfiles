@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"yamllint":"venv\/bin\/yamllint"},"opt":{}},"name":"yamllint","secondary_sources":[],"metrics":{"completion_time":1734051571043,"start_time":1734051568812},"primary_source":{"id":"pkg:pypi\/yamllint@1.35.1","type":"registry+v1"}}

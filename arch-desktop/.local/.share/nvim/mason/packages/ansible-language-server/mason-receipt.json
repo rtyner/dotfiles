@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"ansible-language-server":"node_modules\/.bin\/ansible-language-server"},"opt":{}},"name":"ansible-language-server","secondary_sources":[],"metrics":{"completion_time":1734051335910,"start_time":1734051333094},"primary_source":{"id":"pkg:npm\/%40ansible\/ansible-language-server@1.2.3","type":"registry+v1"}}

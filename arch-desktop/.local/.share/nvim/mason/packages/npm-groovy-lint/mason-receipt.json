@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"npm-groovy-lint":"node_modules\/.bin\/npm-groovy-lint"},"opt":{}},"name":"npm-groovy-lint","secondary_sources":[],"metrics":{"completion_time":1734051508222,"start_time":1734051505403},"primary_source":{"id":"pkg:npm\/npm-groovy-lint@15.0.2","type":"registry+v1"}}

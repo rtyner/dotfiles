@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"shellcheck":"shellcheck"},"opt":{}},"name":"shellcheck","secondary_sources":[],"metrics":{"completion_time":1734051534760,"start_time":1734051534195},"primary_source":{"id":"pkg:github\/vscode-shellcheck\/shellcheck-binaries@v0.10.0","type":"registry+v1"}}

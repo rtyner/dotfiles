@@ -1,0 +1,163 @@
+---
+- name: arch setup
+  hosts: localhost
+  connection: local
+  become: true
+  vars:
+    username: rt
+    dotfiles_repo: https://github.com/rtyner/dotfiles.git
+    basic_packages:
+      - alacritty
+      - alsa-utils
+      - ansible
+      - arandr
+      - base-devel
+      - bat
+      - bc 
+      - blueman
+      - bluez
+      - bluez-utils
+      - cifs-utils
+      - discord
+      - dmenu
+      - fd
+      - feh
+      - firefox
+      - flameshot
+      - git
+      - gnome-keyring
+      - htop
+      - i3-wm
+      - imagemagick
+      - irssi
+      - jq
+      - lightdm
+      - neofetch
+      - neovim
+      - nmap
+      - npm
+      - nvtop
+      - obsidian
+      - pandoc-cli
+      - pcmanfm
+      - picom
+      - pipewire
+      - pipewire-alsa
+      - pipewire-pulse
+      - polybar
+      - ranger
+      - rclone
+      - reflector
+      - ripgrep
+      - rofi
+      - rsync
+      - rust
+      - seahorse
+      - tcpdump
+      - terraform
+      - tmux
+      - tree
+      - ttf-dejavu
+      - ttf-hack
+      - ttf-jetbrains-mono-nerd
+      - ttf-liberation
+      - unzip
+      - vim
+      - wget
+      - zathura
+      - zsh
+      - zsh-syntax-highlighting
+
+  tasks:
+    - name: Update pacman package cache
+      pacman:
+        update_cache: yes
+ 
+    - name: Install basic system packages
+      pacman:
+        name: "{{ basic_packages }}"
+        state: present
+    
+    - name: Create mount directory
+      file:
+        path: "/home/{{ username }}/mount"
+        state: directory
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: '0755'
+
+    - name: Create red directory
+      file:
+        path: "/home/{{ username }}/mount/red"
+        state: directory
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: '0755'
+
+    - name: Create bdp directory
+      file:
+        path: "/home/{{ username }}/mount/bdp"
+        state: directory
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: '0755'
+
+    - name: Configure SMB mounts in fstab
+      lineinfile:
+        path: /etc/fstab
+        line: "{{ item }}"
+        state: present
+      with_items:
+        - "//10.1.1.6/red /home/{{ username }}/mount/red cifs _netdev,uid={{ username }},gid={{ username }},file_mode=0755,dir_mode=0755,noauto,x-systemd.automount 0 0"
+        - "//10.1.1.6/big-dick-pool /home/{{ username }}/mount/bdp cifs _netdev,uid={{ username }},gid={{ username }},file_mode=0755,dir_mode=0755,noauto,x-systemd.automount 0 0"
+
+    - name: Create repos directory
+      file:
+        path: "/home/{{ username }}/repos"
+        state: directory
+        owner: "{{ username }}"
+        group: "{{ username }}"
+        mode: '0755'
+ 
+    - name: Clone dotfiles repository
+      git:
+        repo: "{{ dotfiles_repo }}"
+        dest: "/home/{{ username }}/repos/dotfiles"
+        clone: yes
+        update: no
+      become_user: "{{ username }}"
+ 
+    - name: Install yay
+      block:
+        - name: Clone yay repository
+          git:
+            repo: https://aur.archlinux.org/yay.git
+            dest: /tmp/yay
+          become_user: "{{ username }}"
+ 
+        - name: Build and install yay
+          command:
+            cmd: makepkg -si --noconfirm
+            chdir: /tmp/yay
+          become_user: "{{ username }}"
+ 
+        - name: Clean up yay build directory
+          file:
+            path: /tmp/yay
+            state: absent
+
+    - name: 1Password
+      command: yay -S --noconfirm 1Password 
+      become_user: "{{ username }}"
+
+    - name: mullvad
+      command: yay -S --noconfirm mullvad-vpn
+      become_user: "{{ username }}"
+
+    - name: Configure sudo without password for user
+      lineinfile:
+        path: /etc/sudoers
+        line: "{{ username }} ALL=(ALL) NOPASSWD:ALL"
+        validate: /usr/sbin/visudo -cf %s
+        state: present
+ 

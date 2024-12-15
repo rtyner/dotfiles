@@ -1,0 +1,1 @@
+{"schema_version":"1.1","links":{"share":{},"bin":{"yamlfix":"venv\/bin\/yamlfix"},"opt":{}},"name":"yamlfix","secondary_sources":[],"metrics":{"completion_time":1734051571184,"start_time":1734051566090},"primary_source":{"id":"pkg:pypi\/yamlfix@1.17.0","type":"registry+v1"}}

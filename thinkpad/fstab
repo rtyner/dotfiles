@@ -1,0 +1,31 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/mapper/ainstnvme0n1p2
+UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/         	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=256,subvol=/@	0 0
+
+# /dev/nvme0n1p1
+UUID=1D41-D6E8      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/ainstnvme0n1p2
+UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/.snapshots	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=260,subvol=/@.snapshots	0 0
+
+# /dev/mapper/ainstnvme0n1p2
+UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/home     	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=257,subvol=/@home	0 0
+
+# /dev/mapper/ainstnvme0n1p2
+UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/var/cache/pacman/pkg	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=259,subvol=/@pkg	0 0
+
+# /dev/mapper/ainstnvme0n1p2
+UUID=29f8f6e0-4c0a-4804-9552-0594718eb3af	/var/log  	btrfs     	rw,relatime,compress=zstd:3,ssd,space_cache=v2,subvolid=258,subvol=/@log	0 0
+
+
+# device		                    #mountpoint                #fs-type  #options                                                       #dump  #fsckorder
+//10.1.1.6/big-dick-pool            /home/rt/mnt/big-dick-pool cifs      _netdev,nofail,credentials=/home/rt/.config/smb/.creds,user    0      0
+
+//10.1.1.6/red-share                /home/rt/mnt/red           cifs      _netdev,nofail,credentials=/home/rt/.config/smb/.creds,user    0      0
+
+10.1.1.21:/home/rt/mnt/arch-storage /home/rt/mnt/arch-storage  nfs       defaults,timeo=900,retrans=5,_netdev,user                      0      0
+
+#https://nextcloud.rtynerlabs.io/nextcloud/remote.php/dav/files/user38137 /home/rt/mnt/nextcloud davfs rw,user,noauto 0 0
